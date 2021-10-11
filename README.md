@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/cesarkero/MasteringSofwareDevelopmentInRCapstone.svg?branch=master)](https://travis-ci.com/cesarkero/MasteringSofwareDevelopmentInRCapstone)
+
 # MasteringSofwareDevelopmentInRCapstone
 
 This is a final project within the Coursera specialization in R packages. 
