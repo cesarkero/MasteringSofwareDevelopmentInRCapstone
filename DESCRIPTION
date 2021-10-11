@@ -1,5 +1,5 @@
 Package: MasteringSofwareDevelopmentInRCapstone
-Title: What the Package Does (One Line, Title Case)
+Title: The package shows earthquakes, dates, locations, magnitude and deaths
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "César",
