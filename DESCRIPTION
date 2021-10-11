@@ -18,6 +18,7 @@ Imports:
     tidyverse,
     stringr,
     testthat,
+    leaflet,
     usethis
 Encoding: UTF-8
 LazyData: true
