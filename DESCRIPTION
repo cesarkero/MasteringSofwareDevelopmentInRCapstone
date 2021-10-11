@@ -1,0 +1,31 @@
+Package: MasteringSofwareDevelopmentInRCapstone
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "César",
+           family = "Arquero Cabral",
+           role = c("aut", "cre"),
+           email = "cesarkero@gmail.com",
+           comment = c(ORCID = "www.modlearth.com"))
+Description: Mastering Sofware Development R Capstone (Coursera specialization).
+License: GPL (>= 3)
+Imports:
+    ggplot2,
+    grid,
+    readr,
+    dplyr,
+    lubridate,
+    tidyverse,
+    stringr
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Depends: 
+    R (>= 2.10)
+Config/testthat/edition: 3

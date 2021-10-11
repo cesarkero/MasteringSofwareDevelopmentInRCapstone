@@ -1,0 +1,4 @@
+library(testthat)
+library(MasteringSofwareDevelopmentInRCapstone)
+
+test_check("MasteringSofwareDevelopmentInRCapstone")
