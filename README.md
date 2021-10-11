@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/cesarkero/MasteringSofwareDevelopmentInRCapstone.svg?branch=master)](https://travis-ci.com/cesarkero/MasteringSofwareDevelopmentInRCapstone)
+[![Build Status](https://app.travis-ci.com/cesarkero/MasteringSofwareDevelopmentInRCapstone.svg?branch=master)](https://app.travis-ci.com/cesarkero/MasteringSofwareDevelopmentInRCapstone.svg?branch=master)
 
 # MasteringSofwareDevelopmentInRCapstone
 
