@@ -14,6 +14,7 @@ Imports:
     grid,
     readr,
     dplyr,
+    tidyr,
     lubridate,
     tidyverse,
     stringr,
