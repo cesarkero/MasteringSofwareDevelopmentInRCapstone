@@ -42,7 +42,7 @@ dfclean <- eq_location_clean(df)
 With the clean data lest see a plot of CHINA AND GREECE between 2015 and 2021...
 ```{r}
 dfs <- dfclean %>%
-  filter(Year>2015 & Year<2021 & (COUNTRY =='CHINA' | COUNTRY =='GREECE'))
+  dplyr::filter(Year>2015 & Year<2021 & (COUNTRY =='CHINA' | COUNTRY =='GREECE'))
 
 p1 <- dfs %>%
 ggplot() +

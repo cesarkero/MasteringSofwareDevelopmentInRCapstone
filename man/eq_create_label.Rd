@@ -22,7 +22,7 @@ eq_create_label
 \examples{
 \dontrun{
 dfs \%>\%
-mutate(popup = eq_create_label(.)) \%>\%
+dplyr::mutate(popup = eq_create_label(.)) \%>\%
 eq_map(annot_col = "popup")
 }
 }

@@ -43,7 +43,7 @@ geom_timeline
 \examples{
 \dontrun{
 dfs <- df \%>\%
-filter(Year>2015 & Year<2021 & (COUNTRY =='CHINA' | COUNTRY =='GREECE'))
+dplyr::filter(Year>2015 & Year<2021 & (COUNTRY =='CHINA' | COUNTRY =='GREECE'))
 
 p1 <- dfs \%>\%
 ggplot() +

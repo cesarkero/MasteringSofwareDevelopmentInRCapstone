@@ -64,7 +64,7 @@ eqpoints <- ggplot2::ggproto("eqpoints", ggplot2::Geom,
 #' @examples
 #' \dontrun{
 #' dfs <- df %>%
-#' filter(Year>2015 & Year<2021 & (COUNTRY =='CHINA' | COUNTRY =='GREECE'))
+#' dplyr::filter(Year>2015 & Year<2021 & (COUNTRY =='CHINA' | COUNTRY =='GREECE'))
 #'
 #' p1 <- dfs %>%
 #' ggplot() +
@@ -100,7 +100,7 @@ geom_timeline <- function(mapping = NULL,
 #-------------------------------------------------------------------------------
 # 2. LINES AND LOCATIONS
 #-------------------------------------------------------------------------------
-#' eqloc
+#' @name eqloc
 #' @title eqloc
 #' @description
 #'
@@ -247,7 +247,7 @@ eq_map <- function(df_map = NULL, annot_col) {
 #' @examples
 #' \dontrun{
 #' dfs %>%
-#' mutate(popup = eq_create_label(.)) %>%
+#' dplyr::mutate(popup = eq_create_label(.)) %>%
 #' eq_map(annot_col = "popup")
 #' }
 #' @export
@@ -256,7 +256,7 @@ eq_create_label <- function(df) {
 
     #Creating the "popup_text" without using NA Labels
     df<- df %>% select_(.dots=c('LOCATION_NAME','Mag','Deaths')) %>%
-        mutate(t1 = paste0("<b>Location:</b> ", LOCATION_NAME,"<br />"),
+        dplyr::mutate(t1 = paste0("<b>Location:</b> ", LOCATION_NAME,"<br />"),
                t2 = paste0("<b>Magnitude:</b> ", Mag,"<br />"),
                t3 = paste0("<b>Deaths:</b> ", Deaths,"<br />")) %>%
         unite('popup',c('t1','t2','t3'), sep='')

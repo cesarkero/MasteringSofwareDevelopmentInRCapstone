@@ -24,9 +24,9 @@ eq_clean_data <- function(NOAArawData='./data_raw/earthquakes-2021-10-06_09-24-3
 
     # Create DATE in Date class format
     d1 <- d %>%
-        filter(!is.na(Year)) %>%
-        mutate(Mo = ifelse(is.na(Mo),1,Mo), Dy = ifelse(is.na(Dy),1,Dy)) %>%
-        mutate(Date = ymd(paste0('0000', '-', Mo, '-', Dy)) + years(Year))
+        dplyr::filter(!is.na(Year)) %>%
+        dplyr::mutate(Mo = ifelse(is.na(Mo),1,Mo), Dy = ifelse(is.na(Dy),1,Dy)) %>%
+        dplyr::mutate(Date = ymd(paste0('0000', '-', Mo, '-', Dy)) + years(Year))
 
     # Convert LATITUDE AND LONGITUDE to numeric class
     return(as.data.frame(d1))
@@ -52,11 +52,9 @@ eq_location_clean <- function(df){
     # Remove country: and extra spaces and convert to title
 
     df <- df %>%
-        mutate(LOCATION_NAME = str_trim(gsub("^.*:", '', df$`Location Name`))) %>%
-        mutate(LOCATION_NAME = str_to_title(LOCATION_NAME)) %>%
-        mutate(COUNTRY = str_trim(gsub(":.*$", '', df$`Location Name`)))
+        dplyr::mutate(LOCATION_NAME = stringr::str_trim(gsub("^.*:", '', df$`Location Name`))) %>%
+        dplyr::mutate(LOCATION_NAME = stringr::str_to_title(LOCATION_NAME)) %>%
+        dplyr::mutate(COUNTRY = stringr::str_trim(gsub(":.*$", '', df$`Location Name`)))
 
     return(df)
 }
-
-

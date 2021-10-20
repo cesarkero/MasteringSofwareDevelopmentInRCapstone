@@ -25,7 +25,4 @@ default function for ggplot representation (lines with locations)
 \description{
 
 }
-\details{
-eqloc
-}
 \keyword{datasets}
