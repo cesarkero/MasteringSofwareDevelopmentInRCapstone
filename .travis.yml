@@ -6,3 +6,8 @@ warnings_are_errors: false
 
 global:
    - _R_CHECK_FORCE_SUGGESTS_: false
+
+addons:
+  apt:
+    packages:
+      - libgit2-dev
