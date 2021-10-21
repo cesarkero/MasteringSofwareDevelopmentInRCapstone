@@ -20,6 +20,6 @@ dist: focal          # or bionic | xenial | trusty | precise with xenial as defa
 
 sudo: false
 
-install: sudo apt-get install libgdal-dev libproj-dev libgeos-dev libudunits2-dev netcdf-bin
+before_install: sudo apt-get install libgdal-dev libproj-dev libgeos-dev libudunits2-dev netcdf-bin
 
 r_check_args: "--no-vignettes"
