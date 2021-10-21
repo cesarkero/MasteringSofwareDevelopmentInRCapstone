@@ -10,7 +10,6 @@ Authors@R:
 Description: Mastering Sofware Development R Capstone (Coursera specialization).
 License: GPL (>= 3)
 Imports:
-    raster,
     sf,
     ggplot2,
     grid,
