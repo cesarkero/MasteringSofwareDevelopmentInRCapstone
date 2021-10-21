@@ -23,8 +23,6 @@ library(stringr)
 library(ggplot2)
 library(tidyr)
 library(leaflet)
-library(raster)
-library(mapview)
 ```
 
 First of all, lets clean the data-raw (direct download from NOAA):

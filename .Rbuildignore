@@ -5,3 +5,5 @@
 ^Meta$
 ^\.travis\.yml$
 ^cran-comments\.md$
+^data-raw
+^images
