@@ -198,6 +198,7 @@ geom_eqloc <- function(mapping = NULL,
 #-------------------------------------------------------------------------------
 #' eq_map
 #' @title function to create a map with the selected eq points
+#'
 #' @description This functions creates a map based lon longitud and latitud and
 #' sizes the points based in Mag
 #'
@@ -237,6 +238,7 @@ eq_map <- function(df_map = NULL, annot_col) {
 
 #' eq_create_label
 #' @title eq_create_label
+#'
 #' @description This functions add a new popup to the map created with eq_map
 #' using html notation to show clean and organize data in points
 #'

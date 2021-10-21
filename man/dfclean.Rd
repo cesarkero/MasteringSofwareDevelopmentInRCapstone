@@ -3,13 +3,6 @@
 \name{dfclean}
 \alias{dfclean}
 \title{dfclean}
-\format{
-A data frame with 10000 rows and 2 variables:
-\describe{
-\item{x}{description of Col1}
-\item{y}{description of Col2}
-}
-}
 \description{
 this data is a cleaned version of the data-raw usign the functions within the package
 }

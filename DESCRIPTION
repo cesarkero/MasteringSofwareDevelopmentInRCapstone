@@ -22,8 +22,7 @@ Imports:
     stringr,
     testthat,
     leaflet,
-    mapview,
-    usethis
+    mapview
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
